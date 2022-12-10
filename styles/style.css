@@ -19,7 +19,7 @@ html {
   body {
     min-height: 100vh;
     margin: 0 auto;
-    background-color: linear-gradient(to left top, blue, red);
+    background: linear-gradient(to left top, blue, red);
     ;
   }
 
