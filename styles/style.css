@@ -19,7 +19,7 @@ html {
   body {
     min-height: 100vh;
     margin: 0 auto;
-    background: linear-gradient(to left top, blue, red);
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
   }
 
   h1 {
@@ -27,6 +27,7 @@ html {
     padding: 20px 0;
     color: #fefefe;
     text-shadow: 3px 3px 5px black;
+    
   }
   
   img {
