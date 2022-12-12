@@ -31,5 +31,7 @@ html {
   }
 
   
-  
+  ::-webkit-scrollbar {
+    all:unset;
+}
   
