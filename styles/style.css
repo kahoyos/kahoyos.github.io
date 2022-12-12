@@ -15,6 +15,7 @@ html {
     min-height: 100vh;
     margin: 0 auto;
     background:#537895;
+    scrollbar-color: auto;
   }
 
   h1 {
@@ -29,9 +30,4 @@ html {
     display: block;
     margin: 0 auto;
   }
-
-  
-  ::-webkit-scrollbar {
-    all:auto;
-}
   
