@@ -18,7 +18,7 @@ html {
   body {
     min-height: 100vh;
     margin: 0 auto;
-    background: linear-gradient(to top, #2f5f9e 0%, #96b9d4 100%);
+    background: linear-gradient(to top, #3b678a 0%, #537895 100%);
     padding-top: 300px;
   }
 
@@ -35,10 +35,6 @@ html {
     margin: 0 auto;
   }
 
-  .navbar
-{
-   background: transparent;
-}
   
   
   
