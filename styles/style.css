@@ -32,6 +32,6 @@ html {
 
   
   ::-webkit-scrollbar {
-    all:unset;
+    all:auto;
 }
   
