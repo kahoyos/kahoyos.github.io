@@ -38,9 +38,9 @@ function setUserName() {
 
   window.addEventListener('scroll', function(){
     if(window.pageYOffset > 100) {
-      nav.classList.add('bg-light', 'shadow');
+      nav.classList.add('bg-dark', 'shadow');
     } else {
-      nav.classList.remove('bg-light', 'shadow');
+      nav.classList.remove('bg-dark', 'shadow');
     }
   });
   
