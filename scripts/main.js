@@ -9,5 +9,7 @@ myImage.onclick = () => {
   }
 };
 
+let padding = document.querySelector("nav").offsetHeight + "px";
+document.body.style.paddingTop=padding;
   
   
