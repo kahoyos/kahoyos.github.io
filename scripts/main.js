@@ -9,7 +9,7 @@ myImage.onclick = () => {
   }
 };
 
-let myButton = document.querySelector("button");
+let myButton = document.querySelector(".changename");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
@@ -23,7 +23,7 @@ function setUserName() {
   }
   
 
-  if (!localStorage.getItem(".changename")) {
+  if (!localStorage.getItem("name")) {
     setUserName();
   } else {
     const storedName = localStorage.getItem("name");
