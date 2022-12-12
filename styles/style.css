@@ -19,6 +19,7 @@ html {
     min-height: 100vh;
     margin: 0 auto;
     background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    padding-top: 50px;
   }
 
   h1 {
