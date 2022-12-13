@@ -16,6 +16,7 @@ html {
     margin: 0 auto;
     background:#537895;
     scrollbar-color: auto;
+  
   }
 
   h1 {
@@ -30,4 +31,13 @@ html {
     display: block;
     margin: 0 auto;
   }
-  
+
+  .back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  .hiddenbutton {
+    display: none;
+  }
