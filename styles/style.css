@@ -36,8 +36,21 @@ html {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
+    border-radius: 100%;
+    background: #f7f7f7;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 50%;
+    transition: opacity 0.5s;
   }
 
   .hiddenbutton {
     display: none;
+  }
+
+  .back-to-top-icon {
+    width: 1.5rem;
+    height: 1rem;
+    color: black;
   }

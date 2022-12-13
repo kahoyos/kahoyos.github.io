@@ -14,7 +14,7 @@ document.body.style.paddingTop=padding;
 
 
 $(function(){
-  $("body").on("click", function(e){
+  $(":not(.navbar-collapse, .nav, nav)").on("click", function(e){
     //alert('JQUERY Working');
     if($(".navbar-collapse").hasClass("show")==true)
     {
