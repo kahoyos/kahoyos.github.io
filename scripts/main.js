@@ -14,12 +14,17 @@ document.body.style.paddingTop=padding;
 
 
 $(function(){
-  $(":not(.navbar-collapse, .nav, nav)").on("click", function(e){
-    //alert('JQUERY Working');
-    if($(".navbar-collapse").hasClass("show")==true)
-    {
-      $(".navbar-toggler")[0].click();
+  $("body").on("click", function(e){
+    if(e.target.getAttribute("class")=="navbar"||$(e.target).parents(".navbar").length>0){
+
     }
+    else
+    {
+    if($(".navbar-collapse").hasClass("show")==true)
+     {
+       $(".navbar-toggler")[0].click();
+     }
+    } 
   });
 })
 
