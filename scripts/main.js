@@ -10,26 +10,24 @@ myImage.onclick = () => {
 };
 
 let padding = document.querySelector("nav").offsetHeight + "px";
-document.body.style.paddingTop=padding;
+document.body.style.paddingTop = padding;
 
-
-$(function(){
-  $("body").on("click", function(e){
-    if(e.target.getAttribute("class")=="navbar"||$(e.target).parents(".navbar").length>0){
-
+$(function () {
+  $("body").on("click", function (e) {
+    if (
+      e.target.getAttribute("class") == "navbar" ||
+      $(e.target).parents(".navbar").length > 0
+    ) {
+    } else {
+      if ($(".navbar-collapse").hasClass("show") == true) {
+        $(".navbar-toggler")[0].click();
+      }
     }
-    else
-    {
-    if($(".navbar-collapse").hasClass("show")==true)
-     {
-       $(".navbar-toggler")[0].click();
-     }
-    } 
   });
-})
+});
 
 const showOnPx = 200;
-const backToTopButton = document.querySelector(".back-to-top")
+const backToTopButton = document.querySelector(".back-to-top");
 
 const scrollContainer = () => {
   return document.documentElement || document.body;
@@ -37,11 +35,11 @@ const scrollContainer = () => {
 
 document.addEventListener("scroll", () => {
   if (scrollContainer().scrollTop > showOnPx) {
-    backToTopButton.classList.remove("hiddenbutton")
+    backToTopButton.classList.remove("hiddenbutton");
   } else {
-    backToTopButton.classList.add("hiddenbutton")
+    backToTopButton.classList.add("hiddenbutton");
   }
-})
+});
 
 const goToTop = () => {
   document.body.scrollIntoView({
@@ -49,6 +47,4 @@ const goToTop = () => {
   });
 };
 
-backToTopButton.addEventListener("click", goToTop)
-  
-  
+backToTopButton.addEventListener("click", goToTop);

@@ -1,57 +1,106 @@
 html {
-    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
-    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
-
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
 }
-  
-  p,
-  li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-  }
 
-  body {
-    min-height: 100vh;
-    margin: 0 auto;
-    background:#537895;
-    scrollbar-color: auto;
-  
-  }
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
 
-  h1 {
-    margin: 0;
-    padding: 20px 0;
-    color: #fefefe;
-    text-shadow: 3px 3px 5px black;
-    
-  }
-  
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #537895;
+  scrollbar-color: auto;
+}
 
-  .back-to-top {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    border-radius: 100%;
-    background: #f7f7f7;
-    padding: 0.5rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    opacity: 50%;
-    transition: opacity 0.5s;
-  }
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fefefe;
+  text-shadow: 3px 3px 5px black;
+}
 
-  .hiddenbutton {
-    display: none;
-  }
+img {
+  display: block;
+  margin: 0 auto;
+}
 
-  .back-to-top-icon {
-    width: 1.5rem;
-    height: 1rem;
-    color: black;
-  }
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  background: #f7f7f7;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 50%;
+  transition: opacity 0.5s;
+}
+
+.hiddenbutton {
+  display: none;
+}
+
+.back-to-top-icon {
+  width: 1.5rem;
+  height: 1rem;
+  color: black;
+}
+
+.fa-magnifying-glass {
+  color: gray;
+}
+
+.search-bar {
+  border: 2px solid transparent;
+  display: flex;
+  border-radius: 50px;
+  padding: 3px;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  line-height: 37px;
+  transition: width 170ms ease-in-out;
+  overflow: hidden;
+}
+
+.search-bar__input {
+  flex-grow: 1;
+  font-size: 1.5rem;
+  border: 0;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.search-bar__input:focus {
+  outline: 0;
+}
+
+.search-bar__submit {
+  font-size: 2rem;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  border-radius: 50%;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
+
+.search-bar:focus-within {
+  box-shadow: 10px 10px 30px white;
+  width: 350%;
+  border: 2px solid gray;
+  opacity: 1;
+}
