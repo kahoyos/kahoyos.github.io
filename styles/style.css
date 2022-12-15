@@ -10,6 +10,11 @@ li {
   letter-spacing: 1px;
 }
 
+p {
+  color: white;
+  text-shadow: 3px 3px 5px black;
+}
+
 body {
   min-height: 100vh;
   margin: 0 auto;
@@ -21,6 +26,14 @@ h1 {
   margin: 0;
   padding: 20px 0;
   color: #fefefe;
+  text-shadow: 3px 3px 5px black;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: white;
   text-shadow: 3px 3px 5px black;
 }
 
