@@ -68,6 +68,8 @@ img {
 
 .fa-magnifying-glass {
   color: gray;
+  top: -2px;
+  position: relative;
 }
 
 .search-bar {
@@ -93,6 +95,9 @@ img {
   bottom: 0;
   left: 0;
   opacity: 0;
+  color: gray;
+  cursor: pointer;
+  width: 77%;
 }
 
 .search-bar__input:focus {
@@ -104,16 +109,19 @@ img {
   cursor: pointer;
   border: 0;
   background: transparent;
-  border-radius: 50%;
-  background: transparent;
+  border-radius: 0%;
   width: 30px;
   height: 30px;
   margin-left: auto;
 }
 
 .search-bar:focus-within {
-  box-shadow: 10px 10px 30px white;
   width: 350%;
   border: 2px solid gray;
   opacity: 1;
+}
+
+.search-bar:focus-within .search-bar__input {
+  opacity: 1;
+  cursor: initial;
 }
